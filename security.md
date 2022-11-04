@@ -77,4 +77,5 @@ At this time, a stable version of Laravel 10 will be available (feb. 2023) and P
 As TRAX LRS will be developed with Laravel 10, PHP 8.1 will also become a requirement.
 
 PHP versions: https://www.php.net/supported-versions.php
+
 Laravel versions: https://laravel.com/docs/master/releases#support-policy
