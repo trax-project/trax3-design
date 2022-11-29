@@ -15,11 +15,7 @@ With **TRAX LRS 3.0**, such features will continue to mature, but at the same ti
 ## Contents
 
 - [Status](status.md)
-- Architecture
-- Database
-- Services
-- Front-end
 - [Security](security.md)
-- Scalability
-- Performances
-- Deployment
+- [Scalability](scalability.md)
+- [Performances](performance.md)
+- [Database](database.md)
