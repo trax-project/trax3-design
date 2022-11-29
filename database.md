@@ -91,7 +91,7 @@ In order to enable a sharding strategy based on the *store* concept, we took the
 
 *Defining how to implement a sharding strategy is out of the scope of this document. Please, refer to the documentation of the chosen database technology.*
 
-### Time-based sharding
+### Sharding based on recording time
 
 Statements can be seen as a stream of events ordered by their recording time (i.e. their `stored` property),
 and queries usually consists in getting a range of statements ordered by this recording time.
