@@ -24,6 +24,7 @@ we now support the following drivers to store xAPI data in the TRAX LRS primary 
 - **TimescaleDB:** based on PostgreSQL, it is optimized for time-series data (such as statements) at scale
 - **MongoDB:** probably the most famous document-oriented NoSQL database, and one of the most efficient
 - **Elasticsearch:** probably the best technology to index JSON documents at scale and optimize querying performances 
+- **OpenSearch:** a fork of Elasticsearch with an open source license, supported by Amazon 
 
 *MariaDB support has been dropped because of its lack of JSON features, especially inverted indexes.*
 
@@ -31,7 +32,7 @@ we now support the following drivers to store xAPI data in the TRAX LRS primary 
 ## Connectors
 
 Some people may prefer to continue using **PostgreSQL** (or **MySQL**) as their primary database.
-In this case, **MongoDB** and **Elasticsearch** may be used as a secondary database thanks to TRAX LRS connectors.
+In this case, **MongoDB**, **Elasticsearch** and **OpenSearch** may be used as a secondary database thanks to TRAX LRS connectors.
 
 This approach opens some interesting scenarios, as the secondary database may be considered as:
 
@@ -40,13 +41,13 @@ This approach opens some interesting scenarios, as the secondary database may be
 
 With TRAX LRS 2.0, we introduced an **Elasticsearch connector** to support such scenarios. TRAX LRS 3.0 goes further:
 
-- We added the **MongoDB connector**.
+- We added the **MongoDB** and **OpenSearch** connectors.
 - We added a **(near) real-time sync** mecanism, based on workers listening to events from the events streams, and forwarding xAPI data to the secondary database.
 - We added **filtering options** in order to partially copy the xAPI data to the secondary database.
 - We added **data removing features** in order to remove data matching some criterias from the primary database, on a regular basis.
 
 We also improve the **LRS connector** introduced with TRAX LRS 2.0, in order to add *real-time sync* capabilities and *filtering options*.
-By this way, any xAPI compliant LRS can be used as a secondary database. 
+By this way, any xAPI compliant LRS can be used as a secondary database.
 
 *The development of all these connectors is still in progress.*
 

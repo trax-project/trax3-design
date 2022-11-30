@@ -43,12 +43,13 @@ reducing complexity without compromising performances.
 
 ### New drivers
 
-We introduced new database drivers such as **TimescaleDB**, **MongoDB** and **Elasticsearch**
+We introduced new database drivers such as **TimescaleDB**, **MongoDB**, **Elasticsearch** and **OpenSearch**
 which are well known to deliver good performances at scale:
 
 - **TimescaleDB** is based on PostgreSQL and is optimized for time-series data (such as statements).
 - **MongoDB** is a document-oriented NoSQL database and is know to be very fast both for inserting and querying data.
 - **Elasticsearch** is one of the best technologies to index JSON documents at scale and optimize querying performances. 
+- **OpenSearch** is a fork of Elasticsearch with an open source license, supported by Amazon 
 
 
 ## Back-end (Laravel)

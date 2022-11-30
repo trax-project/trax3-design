@@ -7,8 +7,8 @@
 
 The database layout has been completely redesigned in order to improve scalability:
 
-- **Database drivers:** we now support *MySQL*, *PostgreSQL*, *TimescaleDB*, *MongoDB* and *Elasticsearch* as a primary database for xAPI data.
-- **Connectors:** *MongoDB* and *Elasticsearch* connectors can be used to sync xAPI data with a secondary database.
+- **Database drivers:** we now support *MySQL*, *PostgreSQL*, *TimescaleDB*, *MongoDB*, *Elasticsearch* and *OpenSearch* as a primary database for xAPI data.
+- **Connectors:** *MongoDB*, *Elasticsearch* and *OpenSearch* connectors can be used to sync xAPI data with a secondary database.
 - **Functional partitioning:** xAPI data has been splitted into 4 separated databases, managed by 4 independent services (*statements*, *states*, *agents*, *activities*).
 - **Horizontal partitioning:** the database schema has been improved to enable sharding strategies based on the concept of *store* or based on the time dimension.
 
