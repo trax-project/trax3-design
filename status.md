@@ -14,13 +14,22 @@ The develoment of TRAX LRS 3.0 has started in september 2022.
 - Passed the ADL conformance test with all the supported DB drivers
 - Improved the benchmark tool
 
+### Back-end
+
+- Perf optimization with Laravel Octane
+
+### Deployment
+
+- Docker environment for dev and testing (Laravel Sail)
+
 
 ## In progress
 
 ### Micro-services
 
-- Independent micro-services for *statements*, *states*, *agents* and *activities*
-- Events stream (Redis Stream or Kafka)
+- Independent micro-services for *xAPI store*, *auth*, *forwarding*, *cmi5*
+- Independent micro-services for *statements*, *states*, *agents*, *activities*?
+- Events stream (*Redis Stream* or *Kafka*)
 
 ### Connectors
 

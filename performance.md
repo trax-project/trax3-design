@@ -52,7 +52,18 @@ which are well known to deliver good performances at scale:
 - **OpenSearch** is a fork of Elasticsearch with an open source license, supported by Amazon 
 
 
-## Back-end (Laravel)
+## Back-end
 
-Work in progress...
+### Laravel Octane
 
+TRAX LRS 3.0 uses [Laravel Octane](https://laravel.com/docs/9.x/octane) technology, which keeps the application in-memory.
+Usually with PHP, the entire application layout is reloaded for each HTTP request. Not anymore with Laravel Octane.
+Thanks to a high-powered application server such as [Swoole](https://github.com/swoole/swoole-src),
+TRAX LRS 3.0 is able to serve more HTTP requests per second than TRAX LRS 2.0.
+
+### Concurrency requests
+
+With TRAX LRS 2.0, we encountered some concurrency issues when dealing with intensive incoming data flows.
+TRAX LRS 3.0 has been designed to manage concurrent requests at a high speed without any conflict,
+making it faster and more reliable than TRAX LRS 2.0.
+This is mainly due to the new DB schema and the way the application inetracts with the database.
