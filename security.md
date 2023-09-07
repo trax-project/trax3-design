@@ -1,6 +1,6 @@
 # TRAX LRS 3.0 - Security
 
-> This document details potential changes coming with TRAX LRS 3.0. As we are in the early stage of its design, all the aspects described in this document are **subject to change**. At this stage, there is no guarranty that all the described features will be implemented.
+> This page lists all the recent security requirements requested by the community. We will try to implement some (most?) of them. At this stage, there is no guarranty that these requirements will be implemented.
 
 
 ## Securing user accounts
@@ -42,6 +42,11 @@ CORS policy can be configured and permissions are restricted for such clients.
 Other authentication protocols may be supported by TRAX LRS 3.0, including OAuth as defined in the xAPI spec.
 Options still have to be explored and confirmed. 
 
+Here is a list of measures to improve passwords protection:
+
+- BasicHTTP passwords are currently stored without encryption. This should be changed.
+- In the UI, the password field should hide the entered password.
+
 
 ## OWASP
 
@@ -69,12 +74,11 @@ Further information: https://github.com/xapisec/xapisec
 
 ## PHP / Laravel
 
-Security support for PHP 7.4 will end in novembre 2022 and security support for PHP 8.0 will end 1 year later.
-Considering that TRAX LRS 3.0 could be released in stable version during de 2nd part of 2023,
-support for PHP 7.4 and 8.0 could be dropped. 
+PHP 8.0 security support will end in novembre 2023, so PHP 8.1 will be the minimum requirement.
 
-At this time, a stable version of Laravel 10 will be available (feb. 2023) and PHP 8.1 will be required.
-As TRAX LRS will be developed with Laravel 10, PHP 8.1 will also become a requirement.
+Taking into account that TRAX LRS 3.0 should be released in Q1 of 2024,
+and considering the Laravel 11 should be available at this time,
+we could move directly to PHP 8.2 and 8.3.
 
 PHP versions: https://www.php.net/supported-versions.php
 
