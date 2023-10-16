@@ -3,9 +3,10 @@
 ## History
 
 - September 2022: develoment start.
-- Septembre 2023: first previe release (alpha 1)
+- Septembre 2023: first preview release (alpha 1)
+- October 2023: second preview release (alpha 2)
 
-## Achieved (alpha 1)
+## Achieved (alpha 2)
 
 ### Architecture
 
@@ -16,7 +17,7 @@
 ### Database
 
 - The application database supports MySQL and PostgreSQL (MariaDB support dropped).
-- xAPI stores currently supports MySQL and PostgreSQL (MariaDB support dropped).
+- xAPI stores currently supports MySQL, PostgreSQL, MongoDB, Elasticsearch and OpenSearch (MariaDB support dropped).
 
 ### UI
 
@@ -80,10 +81,6 @@
 - Exploration of personal data
 - Request a personal endpoint to transfer data
 - Request data removal
-
-### Database
-
-- xAPI stores should support MongoDB, Elasticsearch, OpenSearch and TimescaleDB
 
 ### APIs
 
