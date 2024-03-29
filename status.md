@@ -2,11 +2,12 @@
 
 ## History
 
-- September 2022: develoment start.
-- Septembre 2023: first preview release (alpha 1)
+- March 2023: third preview release (alpha 3)
 - October 2023: second preview release (alpha 2)
+- Septembre 2023: first preview release (alpha 1)
+- September 2022: develoment start.
 
-## Achieved (alpha 2)
+## Achieved (alpha 3)
 
 ### Architecture
 
@@ -65,6 +66,38 @@
 
 - All the application settings can be explored from the UI (if the user is allowed to)
 - The external connections (files, external LRSs, external databses) are managed in the settings.
+
+### Technical stack
+
+TRAX LRS has been upgraded and tested with the latest component releases:
+
+- Laravel 11
+- PHP 8.2 to 8.3
+- MySQL 8.0 to 8.3
+- PostgreSQL 13 to 16
+- MongoDB 6 to 7
+- Elasticsearch 8.0 to 8.12
+- OpenSearch 2.0 to 2.12
+- Redis 5 to 7
+
+### Testing
+
+Docker-based testing environment (Laravel Sail) with configuration tool to select:
+
+- PHP version
+- Micro-services
+- Databases
+- HTTP server
+- Reverse proxy with HTTPS
+- Development vs production config
+
+### Documentation
+
+- Standard installation procedure
+- Advanced database configuration
+- Micro-Services configuration
+- Testing with Docker
+
 
 ## In progress
 
