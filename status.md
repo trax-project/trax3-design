@@ -2,12 +2,13 @@
 
 ## History
 
-- March 2023: third preview release (alpha 3)
+- June 2024: fourth preview release (alpha 4)
+- March 2024: third preview release (alpha 3)
 - October 2023: second preview release (alpha 2)
 - Septembre 2023: first preview release (alpha 1)
 - September 2022: develoment start.
 
-## Achieved (alpha 3)
+## Achieved
 
 ### Architecture
 
@@ -67,6 +68,21 @@
 - All the application settings can be explored from the UI (if the user is allowed to)
 - The external connections (files, external LRSs, external databses) are managed in the settings.
 
+### Auth
+
+- Multiple stores management
+- Users managements with predefined roles assignable to one or more stores
+- API consumers (clients) with permissions control and configurable xAPI pipeline
+
+### Privacy
+
+- My profile page
+- Exploration of personal data
+
+### APIs
+
+- All the features available from the UI should also be available as an external API.
+
 ### Technical stack
 
 TRAX LRS has been upgraded and tested with the latest component releases:
@@ -99,40 +115,35 @@ Docker-based testing environment (Laravel Sail) with configuration tool to selec
 - Testing with Docker
 
 
-## In progress
+## In progress for 3.0
 
-### Auth
+- CMI5
+- Last checks
+- Starter vs Extended Editions
+- Documentation
 
-- Multiple stores management
-- Users managements with predefined roles assignable to one or more stores
-- API consumers managements (clients, access points) with permissions control
-- Configurable xAPI pipeline for each API consumer
 
-### Privacy
+## Scheduled for 3.1
 
-- My profile page
-- Exploration of personal data
-- Request a personal endpoint to transfer data
-- Request data removal
+- xAPI 2.0 support
+- Conformance test 2.0
 
-### APIs
 
-- All the features available from the UI should also be available as an external API.
+## Scheduled for 3.2
 
-### xAPI
+Security improvements, including:
 
-- LMS/LRS integration to support CMI5, like we did with TRAX LRS 2.0
-- The application should pass the last ADL LRS conformance testsuite, xAPI 2.0
+- Password rules
+- Double authentication
+- Documentation
+- Etc.
 
-### Performance
 
-- Finalize the benchmark tool
-- Run performance tests
-- Improve performances with caching strategies
+## Scheduled for 3.3
 
-### Security
+Performance improvements, including:
 
-- Security checks
-- Document security aspects
-- Explore the last [security requests](security.md) and implement some of them
+- Octane support
+- Benchmark tool
+- Caching strategy
 
