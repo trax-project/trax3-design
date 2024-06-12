@@ -131,19 +131,19 @@ Docker-based testing environment (Laravel Sail) with configuration tool to selec
 
 ## Scheduled for 3.2
 
+Performance improvements, including:
+
+- Octane support
+- Benchmark tool
+- Caching strategy
+
+
+## Scheduled for 3.3
+
 Security improvements, including:
 
 - Password rules
 - Double authentication
 - Documentation
 - Etc.
-
-
-## Scheduled for 3.3
-
-Performance improvements, including:
-
-- Octane support
-- Benchmark tool
-- Caching strategy
 
