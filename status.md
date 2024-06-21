@@ -2,6 +2,7 @@
 
 ## History
 
+- June 2024: first beta release (beta 1)
 - June 2024: fourth preview release (alpha 4)
 - March 2024: third preview release (alpha 3)
 - October 2023: second preview release (alpha 2)
@@ -81,7 +82,13 @@
 
 ### APIs
 
-- All the features available from the UI should also be available as an external API.
+- All the features available from the UI are also available as external APIs.
+
+### CMI5
+
+- Token delivery API
+- Existing tokens exploration
+- Existing tokens deletion
 
 ### Technical stack
 
@@ -117,7 +124,6 @@ Docker-based testing environment (Laravel Sail) with configuration tool to selec
 
 ## In progress for 3.0
 
-- CMI5
 - Last checks
 - Starter vs Extended Editions
 - Documentation
